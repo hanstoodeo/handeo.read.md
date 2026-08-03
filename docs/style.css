@@ -423,3 +423,62 @@ footer {
   .btn-primary, .btn-ghost { width: 100%; justify-content: center; }
   .footer-inner { flex-direction: column; gap: 16px; text-align: center; }
 }
+
+/* ── Dark Mode (follows macOS / iOS / iPadOS system setting) ── */
+@media (prefers-color-scheme: dark) {
+
+  :root {
+    --black:    #ffffff;   /* text flips to white */
+    --white:    #0a0a0a;   /* background flips to near-black */
+    --grey-100: #1a1a1a;   /* subtle surface */
+    --grey-200: #2a2a2a;   /* borders */
+    --grey-400: #8a8a8a;   /* 4.6:1 on #0a0a0a — passes AA */
+    --grey-500: #9a9a9a;   /* 5.2:1 on #0a0a0a */
+    --grey-600: #c0c0c0;   /* 9.0:1 on #0a0a0a — body text */
+  }
+
+  /* Nav */
+  nav {
+    background: rgba(10,10,10,.88);
+    border-bottom-color: var(--grey-200);
+  }
+
+  /* Mono code label */
+  .mono {
+    background: var(--grey-100);
+    color: #aaaaaa;
+  }
+
+  /* Preview window */
+  .window-bar   { background: var(--grey-100); border-bottom-color: var(--grey-200); }
+  .window-content { background: #111111; }
+  .md-code      { background: #1a1a1a; color: #e0e0e0; }
+  .c-kw         { color: #cccccc; }
+  .c-str        { color: #e8e8e8; }
+  .c-fn         { color: #999999; }
+
+  /* CTA section — inverts: becomes white bg with black text in dark mode */
+  .cta-section  { background: #f0f0f0; color: #000000; }
+  .cta-text h2  { color: #000000; }
+  .cta-text p   { color: #555555; }
+  .cta-section .btn-primary { background: #000000; color: #ffffff; }
+  .cta-section .meta        { color: #888888; }
+
+  /* Footer — slightly lighter dark so it reads as a distinct zone */
+  footer { background: #111111; border-top-color: rgba(255,255,255,.08); }
+  .footer-links a { color: #8a8a8a; }
+  .footer-links a:hover { color: #ffffff; }
+
+  /* Install note */
+  .install-note { border-left-color: var(--grey-200); }
+
+  /* Dividers */
+  .divider-full { background: var(--grey-200); }
+
+  /* Ghost button */
+  .btn-ghost { border-bottom-color: var(--grey-200); color: var(--grey-600); }
+  .btn-ghost:hover { color: var(--black); border-bottom-color: var(--black); }
+
+  /* App icon shadow softened on dark bg */
+  .app-icon { box-shadow: 0 20px 60px rgba(0,0,0,.5); }
+}
