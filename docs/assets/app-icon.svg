@@ -2,7 +2,9 @@
   <!-- Black rounded square background -->
   <rect width="512" height="512" rx="112" ry="112" fill="#000000"/>
   <!-- White oval (the logo shape) -->
-  <ellipse cx="256" cy="248" rx="196" ry="218" fill="#ffffff"/>
+  <ellipse cx="256" cy="240" rx="196" ry="218" fill="#ffffff"/>
   <!-- Black handeo text inside the white oval -->
-  <text x="256" y="275" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="86" font-weight="300" fill="#000000" text-anchor="middle" letter-spacing="-2">handeo</text>
+  <text x="256" y="258" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="86" font-weight="300" fill="#000000" text-anchor="middle" letter-spacing="-2">handeo</text>
+  <!-- Read MD label below handeo text -->
+  <text x="256" y="330" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#000000" text-anchor="middle" letter-spacing="6">Read MD</text>
 </svg>
