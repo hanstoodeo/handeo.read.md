@@ -9,7 +9,7 @@
   --grey-400:   #767676; /* min AA on white: 4.54:1 */
   --grey-500:   #595959; /* min AA on black: 4.56:1 */
   --grey-600:   #484848; /* strong body text on white: 7.2:1 */
-  --radius:     2px;
+  --radius:     8px;
   --font:       'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
   --mono:       'JetBrains Mono', 'SF Mono', 'Fira Code', monospace;
 }
@@ -121,28 +121,30 @@ nav {
   letter-spacing: .04em;
 }
 
-/* ── Buttons ── */
+/* ── Buttons — Apple/App Store pill style ── */
 .btn-primary {
   display: inline-flex;
   align-items: center;
   gap: 8px;
   background: var(--black);
   color: var(--white);
-  padding: 13px 24px;
-  border-radius: var(--radius);
-  font-size: .88rem;
+  padding: 14px 28px;
+  border-radius: 980px; /* full pill */
+  font-size: .92rem;
   font-weight: 500;
-  letter-spacing: .02em;
-  transition: opacity .15s;
+  letter-spacing: .01em;
+  transition: opacity .2s;
+  white-space: nowrap;
 }
-.btn-primary:hover { opacity: .75; }
+.btn-primary:hover { opacity: .72; }
+.btn-primary:active { opacity: .55; transform: scale(.98); }
 
 .btn-ghost {
   display: inline-flex;
   align-items: center;
   gap: 6px;
   color: var(--grey-600);
-  font-size: .88rem;
+  font-size: .92rem;
   font-weight: 400;
   border-bottom: 1px solid var(--grey-200);
   padding-bottom: 2px;
@@ -338,12 +340,8 @@ nav {
   color: var(--white);
 }
 .cta-inner {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 80px;
-  align-items: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 .cta-logo-img {
   height: 80px;
