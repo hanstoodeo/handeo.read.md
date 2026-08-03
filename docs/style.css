@@ -67,11 +67,12 @@ nav {
 }
 .nav-link:hover { color: var(--black); }
 
-/* ── Divider ── */
-.divider-full {
-  height: 1px;
-  background: var(--grey-200);
-}
+/* ── Section backgrounds — alternating white / light grey ── */
+.section-white { background: #ffffff; }
+.section-grey  { background: #f5f5f5; }
+
+/* Remove old divider */
+.divider-full { display: none; }
 
 /* ── Hero ── */
 .hero {
@@ -368,36 +369,58 @@ nav {
 .cta-section .btn-primary:hover { opacity: .85; }
 .cta-section .meta { color: #888888; } /* 4.74:1 on black — passes AA large text & UI */
 
-/* ── Footer ── */
+/* ── Footer — always white, never inverted by dark mode ── */
 footer {
-  background: var(--black);
-  border-top: 1px solid rgba(255,255,255,.08);
-  padding: 24px 40px;
+  background: #ffffff !important;
+  border-top: 1px solid #e8e8e8 !important;
+  padding: 56px 40px 40px;
+  color: #000000 !important;
 }
 .footer-inner {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
+  gap: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 .footer-logo {
-  height: 28px;
+  height: 32px;
   width: auto;
-  opacity: .5;
+}
+.footer-tagline {
+  font-size: .85rem;
+  color: #555555 !important;
+  margin-top: 4px;
+}
+.footer-copy {
+  font-size: .75rem;
+  color: #999999 !important;
+  margin-top: 28px;
 }
 .footer-links {
   display: flex;
-  gap: 28px;
+  flex-direction: column;
+  gap: 16px;
+  text-align: right;
 }
-/* Footer links on black — #888 = 4.74:1 on black, passes AA */
+/* Footer links always on white — black text */
 .footer-links a {
-  font-size: .75rem;
-  color: #888888;
-  letter-spacing: .06em;
-  transition: color .15s;
+  font-size: .9rem;
+  color: #000000 !important;
+  letter-spacing: normal;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: opacity .15s;
 }
-.footer-links a:hover { color: var(--white); }
+.footer-links a:hover { opacity: .45; }
 
 /* ── Responsive ── */
 @media (max-width: 900px) {
@@ -421,7 +444,8 @@ footer {
   .feature:nth-last-child(-n+3) { border-bottom: 1px solid var(--grey-200); }
   .feature:last-child { border-bottom: none !important; }
   .btn-primary, .btn-ghost { width: 100%; justify-content: center; }
-  .footer-inner { flex-direction: column; gap: 16px; text-align: center; }
+  .footer-inner { flex-direction: column; gap: 32px; }
+  .footer-links { text-align: left; }
 }
 
 /* ── Dark Mode (follows macOS / iOS / iPadOS system setting) ── */
@@ -464,16 +488,15 @@ footer {
   .cta-section .btn-primary { background: #000000; color: #ffffff; }
   .cta-section .meta        { color: #888888; }
 
-  /* Footer — slightly lighter dark so it reads as a distinct zone */
-  footer { background: #111111; border-top-color: rgba(255,255,255,.08); }
-  .footer-links a { color: #8a8a8a; }
-  .footer-links a:hover { color: #ffffff; }
+  /* Footer — always white regardless of dark mode */
+  /* footer rules are locked with !important above — no override needed */
 
   /* Install note */
   .install-note { border-left-color: var(--grey-200); }
 
-  /* Dividers */
-  .divider-full { background: var(--grey-200); }
+  /* Section backgrounds in dark mode */
+  .section-white { background: #0a0a0a; }
+  .section-grey  { background: #141414; }
 
   /* Ghost button */
   .btn-ghost { border-bottom-color: var(--grey-200); color: var(--grey-600); }
