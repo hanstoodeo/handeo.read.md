@@ -103,7 +103,7 @@ class _HomeScreenState extends State<HomeScreen> {
             const Icon(Icons.article_outlined, size: 22),
             const SizedBox(width: 8),
             Text(
-              hasFile ? (_fileName ?? 'Handeo Read MD') : 'Handeo Read MD',
+              hasFile ? (_fileName ?? 'Hanstoodeo Read MD') : 'Hanstoodeo Read MD',
               style: const TextStyle(fontWeight: FontWeight.w600),
             ),
           ],
@@ -164,7 +164,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                     const SizedBox(height: 16),
                     Text(
-                      'Handeo Read MD',
+                      'Hanstoodeo Read MD',
                       style: theme.textTheme.headlineMedium?.copyWith(
                         fontWeight: FontWeight.bold,
                       ),

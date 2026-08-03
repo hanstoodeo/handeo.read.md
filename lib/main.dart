@@ -36,7 +36,7 @@ class _HandeoReadMDState extends State<HandeoReadMD> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Handeo Read MD',
+      title: 'Hanstoodeo Read MD',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.light(),
       darkTheme: AppTheme.dark(),
