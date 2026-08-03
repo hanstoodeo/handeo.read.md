@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Rounded square background -->
+  <rect width="512" height="512" rx="112" ry="112" fill="#000000"/>
+  <!-- Oval shape inside -->
+  <ellipse cx="256" cy="256" rx="196" ry="220" fill="#000000" stroke="#ffffff" stroke-width="2"/>
+  <!-- handeo text -->
+  <text x="256" y="282" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="88" font-weight="300" fill="#ffffff" text-anchor="middle" letter-spacing="-2">handeo</text>
+  <!-- small label -->
+  <text x="256" y="360" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="rgba(255,255,255,0.5)" text-anchor="middle" letter-spacing="6">READ MD</text>
+</svg>

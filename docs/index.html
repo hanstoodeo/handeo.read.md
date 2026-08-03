@@ -4,208 +4,201 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hanstoodeo Read MD — Markdown Reader for Mac</title>
-  <meta name="description" content="A beautiful, free Markdown file reader for macOS. Open any .md file and see it rendered instantly." />
+  <meta name="description" content="A clean, free Markdown file reader for macOS by hanstoodeo. Open any .md file and see it rendered instantly." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 </head>
 <body>
 
   <!-- NAV -->
   <nav>
     <div class="nav-inner">
-      <div class="nav-logo">
-        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
-          <rect width="28" height="28" rx="7" fill="#2D6A4F"/>
-          <path d="M7 9h14M7 14h10M7 19h12" stroke="white" stroke-width="2" stroke-linecap="round"/>
-        </svg>
-        <span>Hanstoodeo Read MD</span>
-      </div>
-      <a href="https://github.com/hanstoodeo/handeo.read.md" target="_blank" rel="noopener" class="nav-github" aria-label="View on GitHub">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-          <path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.031 1.531 1.031.892 1.529 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
-        </svg>
+      <a href="https://hanstoodeo.github.io/handeodesign/" class="nav-logo" target="_blank" rel="noopener">
+        <img src="assets/logo-light.svg" alt="handeo" class="nav-logo-img" />
+      </a>
+      <a href="https://github.com/hanstoodeo/handeo.read.md" target="_blank" rel="noopener" class="nav-link">
         GitHub
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4.5M9.5 2.5V7.5"/></svg>
       </a>
     </div>
   </nav>
 
   <!-- HERO -->
-  <header class="hero">
+  <section class="hero">
     <div class="hero-inner">
-      <div class="badge">Free &amp; Open Source</div>
-      <h1>Read Markdown the<br /><span class="accent">way it's meant to look.</span></h1>
-      <p class="hero-sub">
-        Hanstoodeo Read MD is a clean, fast Markdown viewer for macOS.
-        Open any <code>.md</code> file and see it rendered beautifully — no clutter, no subscription.
-      </p>
-      <div class="hero-actions">
-        <a href="https://github.com/hanstoodeo/handeo.read.md/raw/main/installer/HandeoReadMD-1.0.0.dmg"
-           class="btn-download" download>
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-            <polyline points="7 10 12 15 17 10"/>
-            <line x1="12" y1="15" x2="12" y2="3"/>
-          </svg>
-          Download for Mac
-        </a>
-        <a href="https://github.com/hanstoodeo/handeo.read.md" target="_blank" rel="noopener" class="btn-secondary">
-          View Source
-        </a>
+      <div class="hero-left">
+        <p class="eyebrow">Free · Open Source · macOS</p>
+        <h1>Read MD.<br/>The way it<br/>should be.</h1>
+        <p class="hero-desc">
+          A clean, distraction-free Markdown viewer.<br/>
+          Open any <span class="mono">.md</span> file. See it rendered beautifully.
+        </p>
+        <div class="hero-actions">
+          <a href="https://github.com/hanstoodeo/handeo.read.md/raw/main/installer/HandeoReadMD-1.0.0.dmg"
+             class="btn-primary" download>
+            Download for Mac
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          </a>
+          <a href="https://github.com/hanstoodeo/handeo.read.md" target="_blank" rel="noopener" class="btn-ghost">
+            View Source
+          </a>
+        </div>
+        <p class="meta">v1.0.0 &nbsp;·&nbsp; macOS 12+ &nbsp;·&nbsp; 17 MB</p>
       </div>
-      <p class="version-note">Version 1.0.0 &nbsp;·&nbsp; macOS 12+ &nbsp;·&nbsp; Apple Silicon &amp; Intel &nbsp;·&nbsp; Free</p>
-    </div>
 
-    <!-- Fake app window preview -->
-    <div class="app-preview" aria-hidden="true">
-      <div class="window-chrome">
-        <span class="dot red"></span>
-        <span class="dot yellow"></span>
-        <span class="dot green"></span>
-        <span class="window-title">README.md</span>
-      </div>
-      <div class="window-body">
-        <div class="preview-line h1">Getting Started</div>
-        <div class="preview-line body">Welcome to <strong>Hanstoodeo Read MD</strong> — your lightweight Markdown reader.</div>
-        <div class="preview-line h2">Features</div>
-        <div class="preview-line li">✦ &nbsp;GitHub Flavored Markdown</div>
-        <div class="preview-line li">✦ &nbsp;Syntax highlighted code blocks</div>
-        <div class="preview-line li">✦ &nbsp;Dark &amp; light mode</div>
-        <div class="preview-line li">✦ &nbsp;Recent files history</div>
-        <div class="preview-code">
-          <span class="kw">const</span> message = <span class="str">"Hello, Markdown!"</span>;<br/>
-          console.<span class="fn">log</span>(message);
+      <div class="hero-right">
+        <div class="app-icon-wrap">
+          <img src="assets/app-icon.svg" alt="Hanstoodeo Read MD app icon" class="app-icon" />
+          <p class="app-icon-label">Hanstoodeo Read MD</p>
         </div>
       </div>
     </div>
-  </header>
+  </section>
+
+  <!-- DIVIDER -->
+  <div class="divider-full"></div>
+
+  <!-- PREVIEW -->
+  <section class="preview-section">
+    <div class="section-inner">
+      <p class="section-label">Preview</p>
+      <div class="window">
+        <div class="window-bar">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="window-name">README.md</span>
+        </div>
+        <div class="window-content">
+          <div class="md-h1">Getting Started</div>
+          <div class="md-p">Welcome to <strong>Hanstoodeo Read MD</strong> — your lightweight Markdown reader for macOS.</div>
+          <div class="md-h2">Features</div>
+          <div class="md-ul">
+            <div class="md-li">GitHub Flavored Markdown</div>
+            <div class="md-li">Syntax highlighted code blocks</div>
+            <div class="md-li">Dark &amp; light mode</div>
+            <div class="md-li">Recent files history</div>
+          </div>
+          <div class="md-code"><span class="c-kw">const</span> reader = <span class="c-str">"Hanstoodeo Read MD"</span>;<br/><span class="c-kw">console</span>.<span class="c-fn">log</span>(<span class="c-str">`Welcome to ${reader}`</span>);</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIVIDER -->
+  <div class="divider-full"></div>
 
   <!-- FEATURES -->
-  <section class="features">
+  <section class="features-section">
     <div class="section-inner">
-      <h2>Everything you need, nothing you don't.</h2>
-      <div class="feature-grid">
+      <p class="section-label">What's inside</p>
+      <div class="features-grid">
 
-        <div class="feature-card">
-          <div class="feature-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-          </div>
-          <h3>Rich Markdown Rendering</h3>
-          <p>Full GitHub Flavored Markdown — headers, bold, italic, tables, blockquotes, and more.</p>
+        <div class="feature">
+          <span class="feature-num">01</span>
+          <h3>Rich Markdown</h3>
+          <p>Full GitHub Flavored Markdown — headers, tables, blockquotes, lists, and more.</p>
         </div>
 
-        <div class="feature-card">
-          <div class="feature-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-          </div>
-          <h3>Syntax Highlighting</h3>
-          <p>Code blocks are automatically highlighted with support for dozens of languages.</p>
+        <div class="feature">
+          <span class="feature-num">02</span>
+          <h3>Code Highlighting</h3>
+          <p>Automatic syntax highlighting for dozens of programming languages.</p>
         </div>
 
-        <div class="feature-card">
-          <div class="feature-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
-          </div>
-          <h3>Dark &amp; Light Mode</h3>
-          <p>Switch between themes with one tap. Your preference is saved automatically.</p>
+        <div class="feature">
+          <span class="feature-num">03</span>
+          <h3>Dark &amp; Light</h3>
+          <p>Switch themes in one tap. Your preference persists across sessions.</p>
         </div>
 
-        <div class="feature-card">
-          <div class="feature-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-          </div>
+        <div class="feature">
+          <span class="feature-num">04</span>
           <h3>Clickable Links</h3>
-          <p>Tap any link in your document and it opens straight in your default browser.</p>
+          <p>Every link in your document opens directly in your default browser.</p>
         </div>
 
-        <div class="feature-card">
-          <div class="feature-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          </div>
+        <div class="feature">
+          <span class="feature-num">05</span>
           <h3>Recent Files</h3>
-          <p>Quickly jump back to the last 10 files you opened — no searching required.</p>
+          <p>Quick access to your last 10 opened files — no searching needed.</p>
         </div>
 
-        <div class="feature-card">
-          <div class="feature-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-          </div>
-          <h3>Completely Free</h3>
-          <p>No ads, no subscription, no tracking. Open source and free forever.</p>
+        <div class="feature">
+          <span class="feature-num">06</span>
+          <h3>Free Forever</h3>
+          <p>No subscription, no ads, no tracking. Open source and always free.</p>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- HOW TO INSTALL -->
-  <section class="install">
+  <!-- DIVIDER -->
+  <div class="divider-full"></div>
+
+  <!-- INSTALL -->
+  <section class="install-section">
     <div class="section-inner">
-      <h2>Installing takes 30 seconds.</h2>
-      <div class="steps">
-        <div class="step">
-          <div class="step-num">1</div>
-          <div class="step-text">
-            <strong>Download the .dmg file</strong>
-            <span>Click the download button above.</span>
-          </div>
+      <p class="section-label">How to install</p>
+      <div class="install-steps">
+        <div class="install-step">
+          <span class="step-n">1 —</span>
+          <span>Download the <span class="mono">.dmg</span> file below.</span>
         </div>
-        <div class="step-arrow" aria-hidden="true">→</div>
-        <div class="step">
-          <div class="step-num">2</div>
-          <div class="step-text">
-            <strong>Open it</strong>
-            <span>Double-click the downloaded file.</span>
-          </div>
+        <div class="install-step">
+          <span class="step-n">2 —</span>
+          <span>Double-click to open the installer.</span>
         </div>
-        <div class="step-arrow" aria-hidden="true">→</div>
-        <div class="step">
-          <div class="step-num">3</div>
-          <div class="step-text">
-            <strong>Drag to Applications</strong>
-            <span>Drop the app into the Applications folder.</span>
-          </div>
+        <div class="install-step">
+          <span class="step-n">3 —</span>
+          <span>Drag the app to your Applications folder.</span>
         </div>
-        <div class="step-arrow" aria-hidden="true">→</div>
-        <div class="step">
-          <div class="step-num">4</div>
-          <div class="step-text">
-            <strong>Launch &amp; enjoy</strong>
-            <span>Open from Launchpad or Spotlight.</span>
-          </div>
+        <div class="install-step">
+          <span class="step-n">4 —</span>
+          <span>Launch from Spotlight or Launchpad.</span>
         </div>
       </div>
       <div class="install-note">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-        First launch: macOS may show a security prompt. Right-click the app → <strong>Open</strong> → <strong>Open Anyway</strong>.
+        First launch: right-click the app → <strong>Open</strong> → <strong>Open Anyway</strong> to bypass the macOS security prompt.
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
-  <section class="cta">
-    <div class="section-inner">
-      <h2>Ready to read your Markdown?</h2>
-      <p>Free download, no account needed.</p>
-      <a href="https://github.com/hanstoodeo/handeo.read.md/raw/main/installer/HandeoReadMD-1.0.0.dmg"
-         class="btn-download" download>
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-          <polyline points="7 10 12 15 17 10"/>
-          <line x1="12" y1="15" x2="12" y2="3"/>
-        </svg>
-        Download for Mac — Free
-      </a>
-      <p class="version-note" style="margin-top: 16px;">Version 1.0.0 &nbsp;·&nbsp; macOS 12+</p>
+  <!-- DIVIDER -->
+  <div class="divider-full"></div>
+
+  <!-- DOWNLOAD CTA -->
+  <section class="cta-section">
+    <div class="section-inner cta-inner">
+      <div class="cta-logo">
+        <img src="assets/logo-dark.svg" alt="handeo" class="cta-logo-img" />
+      </div>
+      <div class="cta-text">
+        <h2>Hanstoodeo Read MD</h2>
+        <p>Free Markdown reader for macOS. No account required.</p>
+        <a href="https://github.com/hanstoodeo/handeo.read.md/raw/main/installer/HandeoReadMD-1.0.0.dmg"
+           class="btn-primary" download>
+          Download — Free
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        </a>
+        <p class="meta" style="margin-top:16px;">v1.0.0 &nbsp;·&nbsp; macOS 12+ &nbsp;·&nbsp; 17 MB</p>
+      </div>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer>
     <div class="footer-inner">
-      <span>Made with Flutter &amp; ❤️ by <a href="https://github.com/hanstoodeo" target="_blank" rel="noopener">hanstoodeo</a></span>
-      <a href="https://github.com/hanstoodeo/handeo.read.md" target="_blank" rel="noopener">View on GitHub</a>
+      <a href="https://hanstoodeo.github.io/handeodesign/" target="_blank" rel="noopener">
+        <img src="assets/logo-light.svg" alt="handeo" class="footer-logo" />
+      </a>
+      <div class="footer-links">
+        <a href="https://github.com/hanstoodeo/handeo.read.md" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://hanstoodeo.github.io/handeodesign/" target="_blank" rel="noopener">handeodesign</a>
+      </div>
     </div>
   </footer>
 
